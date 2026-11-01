@@ -1,0 +1,17 @@
+{
+  "name": "codex-native-delegate",
+  "version": "0.2.1",
+  "description": "Local supervision queue and native Host plugin for DeepSeek Harness",
+  "type": "module",
+  "license": "UNLICENSED",
+  "private": true,
+  "engines": { "node": ">=22" },
+  "exports": { ".": "./native/plugin/index.mjs" },
+  "bin": { "codex-delegate": "./native.mjs", "codex-delegate-install": "./installer.mjs" },
+  "files": ["native.mjs", "installer.mjs", "installer.example.json", "native/plugin/", "native/cli/", "README.md", "SECURITY.md", "CHANGELOG.md", "docs/"],
+  "scripts": {
+    "test": "node scripts/test.mjs",
+    "check:release": "node scripts/check-release.mjs",
+    "check": "npm test && npm run check:release"
+  }
+}

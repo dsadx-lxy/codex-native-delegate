@@ -1,0 +1,9 @@
+# 兼容性与验证范围
+
+Host插件入口导出Cordis形式的name/version/apply，通过ctx.inject请求agents、approval、permissionPresets、sessionController、sessionQuery、sessions、workspaceRegistry服务。缺少服务时等待并报告状态，不伪造可用。
+
+没有捆绑、复制Harness程序或其内部依赖。所有运行时能力由Host提供；服务名可用不保证未来API行为不变。尚无官方公开兼容版本矩阵，因此不承诺任意Harness版本均兼容。
+
+本机原型已验证过真实会话及逐次审批。此次独立发布候选须分别记录离线测试、本机安装与重启后的真实会话测试；不能把原型记录冒充独立包完成了所有跨机器验证。修复后真实旧会话恢复仍需重启Host实测。
+
+Windows沙箱ACL初始化失败属于另一个问题。插件不会放宽权限或自动修改ACL；应单独排查Host对工作目录的沙箱支持。

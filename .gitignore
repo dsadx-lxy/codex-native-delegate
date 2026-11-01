@@ -1,0 +1,14 @@
+node_modules/
+.test-tmp/
+dist/
+*.tgz
+*.log
+installer.local.json
+installer.config.json
+native/control/
+native/releases/
+install-records/
+.env
+.env.*
+!.env.example
+test/.installer-*/

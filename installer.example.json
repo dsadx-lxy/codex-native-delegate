@@ -1,0 +1,13 @@
+{
+  "_comment": "Example portable installer config. Paths may be absolute or relative to this JSON file; subpaths are relative to pluginRoot. Do not store credentials.",
+  "pluginRoot": ".",
+  "entryFile": "native.mjs",
+  "implementationDir": "native/plugin",
+  "controlDir": "native/control",
+  "controlRoot": ".",
+  "allowedRoot": "<ABSOLUTE_ALLOWED_PROJECT_ROOT>",
+  "profilePath": "<ABSOLUTE_DSH_HOME>/profiles/desktop/cordis.patch.yml",
+  "agentPreset": "<AGENT_PRESET>",
+  "permissionPreset": "workspace-write",
+  "workspaceTitle": "Codex 委派"
+}
