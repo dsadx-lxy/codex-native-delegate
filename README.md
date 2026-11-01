@@ -2,7 +2,7 @@
 
 本地 DeepSeek Harness Host 插件及监督命令行工具。监督端负责范围、单次权限审核和独立验收；Harness 会话执行任务。它使用本机文件队列通信，不启动网络服务，不读取或迁移账号凭据。
 
-这是独立开发的插件项目，不是 OpenAI 或 DeepSeek 官方发布、认证的插件。当前版本采用私有仓库保存，许可证待作者确认；暂设 `private: true` 和 `UNLICENSED`，阻止意外npm发布。
+这是独立开发的插件项目，不是 OpenAI 或 DeepSeek 官方发布、认证的插件。仓库已公开，许可证待作者确认；公开可见不等于授予开源使用许可。暂设 `private: true` 和 `UNLICENSED`，阻止意外npm发布。
 
 ## 支持范围
 

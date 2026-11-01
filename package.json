@@ -5,13 +5,37 @@
   "type": "module",
   "license": "UNLICENSED",
   "private": true,
-  "engines": { "node": ">=22" },
-  "exports": { ".": "./native/plugin/index.mjs" },
-  "bin": { "codex-delegate": "./native.mjs", "codex-delegate-install": "./installer.mjs" },
-  "files": ["native.mjs", "installer.mjs", "installer.example.json", "native/plugin/", "native/cli/", "README.md", "SECURITY.md", "CHANGELOG.md", "docs/"],
+  "engines": {
+    "node": ">=22"
+  },
+  "exports": {
+    ".": "./native/plugin/index.mjs"
+  },
+  "bin": {
+    "codex-delegate": "./native.mjs",
+    "codex-delegate-install": "./installer.mjs"
+  },
+  "files": [
+    "native.mjs",
+    "installer.mjs",
+    "installer.example.json",
+    "native/plugin/",
+    "native/cli/",
+    "README.md",
+    "SECURITY.md",
+    "CHANGELOG.md",
+    "docs/"
+  ],
   "scripts": {
     "test": "node scripts/test.mjs",
     "check:release": "node scripts/check-release.mjs",
     "check": "npm test && npm run check:release"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dsadx-lxy/codex-native-delegate.git"
+  },
+  "bugs": {
+    "url": "https://github.com/dsadx-lxy/codex-native-delegate/issues"
   }
 }
